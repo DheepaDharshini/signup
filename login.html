@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <div>
+        <h1>Login</h1>
+        <p>Homepage › Login</p>
+    </div>
+</div>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+    <div class="form-box">
+        <h2>Login</h2>
+
+        <form>
+            <label>Email Address *</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Password *</label>
+            <div class="password-container">
+                <input type="password" placeholder="Enter your password" required>
+                <i class="fa-solid fa-eye toggle-password"></i>
+            </div>
+
+            <div class="checkbox-container">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+
+    <div class="right-box">
+        <h2>New Customer?</h2>
+        <p>Join us today for exclusive benefits and offers.</p>
+        <button class="btn" onclick="location.href='register.html'">Sign Up</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
