@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+   background: #F8E2D0;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+        url("Images/login.jpg") center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom:15px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Form Container */
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 1000px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form-box {
+    padding: 40px;
+    flex: 1 1 400px;
+    border-right: 2px solid #642E13;   
+    border-radius: 0;
+    box-shadow: none;                  
+}
+
+
+.form-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input Fields */
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"],
+.form-box input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-box label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Checkbox & Links */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button {
+    background: #642E13;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border: 2px solid transparent; 
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background: #fff;
+    color: #642E13;
+    border-color: #642E13; 
+}
+
+
+/* Right Side Box */
+.right-box {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   
+}
+
+
+.right-box p {
+    margin-bottom: 20px;
+}
+
+.right-box button {
+    width: 150px;
+}
+
+/* Password Show/Hide Icon */
+.password-container {
+    position: relative;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+}
